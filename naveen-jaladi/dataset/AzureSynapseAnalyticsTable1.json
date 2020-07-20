@@ -1,0 +1,33 @@
+{
+	"name": "AzureSynapseAnalyticsTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "PRODUCTID",
+				"type": "varchar"
+			},
+			{
+				"name": "PRODUCTNDC",
+				"type": "varchar"
+			},
+			{
+				"name": "NDCPACKAGECODE",
+				"type": "varchar"
+			},
+			{
+				"name": "PACKAGEDESCRIPTION",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Drug_detail"
+		}
+	}
+}
