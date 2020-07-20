@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Drug_sub.txt",
 				"container": "azcont"
 			},
 			"columnDelimiter": ",",
