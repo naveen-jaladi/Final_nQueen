@@ -1,0 +1,40 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Drug_sub.txt",
+				"container": "azcont"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PRODUCTID",
+				"type": "String"
+			},
+			{
+				"name": "PRODUCTNDC",
+				"type": "String"
+			},
+			{
+				"name": "NDCPACKAGECODE",
+				"type": "String"
+			},
+			{
+				"name": "PACKAGEDESCRIPTION",
+				"type": "String"
+			}
+		]
+	}
+}
